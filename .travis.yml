@@ -1,6 +1,6 @@
 before_install:
 - openssl aes-256-cbc -K $encrypted_0b242e099523_key -iv $encrypted_0b242e099523_iv
-  -in deploy_key.enc -out ~\/deploy_key -d
+  -in deploy_key.enc -out deploy_key -d
 
 services:
 - docker
