@@ -1,7 +1,6 @@
 FROM busybox
 
-ADD index.html /www/index.html
-ADD config.yml /www/config.yml
+ADD admin /www/admin
 
 EXPOSE 80
 

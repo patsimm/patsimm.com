@@ -1,11 +1,15 @@
 backend:
-  name: test-repo
+  backend:
+  name: github
+  repo: patsimm/patsimm.com
 
 media_folder: media_folder
 
+publish_mode: editorial_workflow
+
 collections:
-  - name: post
-    label: Post
+  - name: blog
+    label: Blog
     folder: posts
     create: true
     fields:
