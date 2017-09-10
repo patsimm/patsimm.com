@@ -9,7 +9,7 @@ before_install:
 script:
 - docker ps -a | grep web
 after_script:
-- docker rm -f app
+- docker rm -f web
 
 deploy:
   provider: script
