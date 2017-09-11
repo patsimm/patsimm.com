@@ -2,6 +2,7 @@ backend:
   backend:
   name: github
   repo: patsimm/patsimm.com
+  base_url: http://patsimm.com
 
 media_folder: media_folder
 
