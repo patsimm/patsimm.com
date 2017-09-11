@@ -15,11 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 title: patsimm's homepage
 email: patrick.simmelbauer@gmail.com
-description: > # Homepage of Patrick Simmelbauer. Developer. Explorer.
-Tech- and Artenthusiast.
+description: >-
+  Homepage of Patrick Simmelbauer. Developer. Explorer. Tech- and Artenthusiast.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: patsimm
+github_username:  patsimm
 
 # Build settings
 markdown: kramdown
