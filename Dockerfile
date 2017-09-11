@@ -1,8 +1,14 @@
-FROM busybox
+FROM octohost/jekyll-nginx
 
-ADD admin /www/admin
+ENV LANGUAGE en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+
+WORKDIR /srv/www
+
+ADD . /srv/www/
+RUN jekyll build
 
 EXPOSE 80
 
-# Create a basic webserver and sleep forever
-CMD httpd -p 80 -h /www; tail -f /dev/null
+CMD nginx
