@@ -1,8 +1,15 @@
-FROM busybox
+FROM alpine:3.6
 
-ADD admin /www/admin
+RUN mkdir -p /var/www
+WORKDIR /var/www
 
-EXPOSE 80
+ADD . /var/www
 
-# Create a basic webserver and sleep forever
-CMD httpd -p 80 -h /www; tail -f /dev/null
+RUN apk add --no-cache build-base libffi-dev ruby-dev ruby-rdoc ruby-irb ruby \
+  nginx && mv nginx.conf /etc/nginx/nginx.conf
+RUN gem install jekyll bundler
+
+RUN bundle install
+RUN jekyll build
+
+CMD ["nginx", "-g", "pid /tmp/nginx.pid; daemon off;"]
