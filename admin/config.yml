@@ -10,7 +10,7 @@ publish_mode: editorial_workflow
 collections:
   - name: blog
     label: Blog
-    folder: posts
+    folder: _posts
     create: true
     fields:
       - {name: title, label: Title}
