@@ -1,14 +1,15 @@
-FROM octohost/jekyll-nginx
+FROM alpine:3.6
 
-ENV LANGUAGE en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LC_ALL en_US.UTF-8
+RUN mkdir -p /var/www
+WORKDIR /var/www
 
-WORKDIR /srv/www
+ADD . /var/www
 
-ADD . /srv/www/
+RUN apk add --no-cache build-base libffi-dev ruby-dev ruby-rdoc ruby-irb ruby \
+  nginx && mv nginx.conf /etc/nginx/nginx.conf
+RUN gem install jekyll bundler
+
+RUN bundle install
 RUN jekyll build
 
-EXPOSE 80
-
-CMD nginx
+CMD ["nginx", "-g", "pid /tmp/nginx.pid; daemon off;"]
