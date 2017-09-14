@@ -1,18 +1,25 @@
 backend:
-  backend:
   name: github
   repo: patsimm/patsimm.com
   base_url: http://patsimm.com
 
 media_folder: media_folder
 
-publish_mode: editorial_workflow
-
 collections:
   - name: blog
     label: Blog
     folder: _posts
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {name: title, label: Title}
+      - {name: body, label: Body, widget: markdown}
+  - name: subsite
+    label: Subsite
+    folder: _subsites
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {name: permalink, label: Permalink}
       - {name: body, label: Body, widget: markdown}
