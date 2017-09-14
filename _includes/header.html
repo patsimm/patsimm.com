@@ -1,14 +1,15 @@
 <!-- <header class="site-header">
   {% assign default_paths = site.collections | map: "path" %}
   {% assign page_paths = site.header_pages | default: default_paths %}
-  <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  <a class="site-title" href="{{ "/" | relative_url }}">:)</a>
 
   {% if page_paths %}
     <nav class="site-nav">
       <div class="trigger">
+        <li><a class="page-link" href="#blog">Blog</a></li>
         {% for subsite in site.subsites %}
           {% if subsite.title %}
-          <a class="page-link" href="{{ subsite.url | relative_url }}">{{ subsite.title | escape }}</a>
+          <li><a class="page-link" href="{{ subsite.url | relative_url }}">{{ subsite.title | escape }}</a></li>
           {% endif %}
         {% endfor %}
       </div>

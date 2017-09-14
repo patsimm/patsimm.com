@@ -20,6 +20,6 @@ collections:
     folder: _subsites
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "subsite"}
       - {name: permalink, label: Permalink}
       - {name: body, label: Body, widget: markdown}
