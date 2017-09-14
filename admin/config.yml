@@ -15,9 +15,9 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {name: title, label: Title}
       - {name: body, label: Body, widget: markdown}
-  - name: page
-    label: Page
-    folder: .
+  - name: subsite
+    label: Subsite
+    folder: _subsites
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
