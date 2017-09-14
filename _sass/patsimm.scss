@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,900|Open+Sans:400,700');
+
 body {
-  font-family:  "Open Sans", sans-serif;
+  margin: 1em;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.page-content {
+  display: inline-block;
+  max-width: 1024px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* HEADER */
+
+.site-header {
+  font-family: "Crimson Text", serif;
+}
+
+/* HOME */
+
+.layout-home {
+  font-family: "Crimson Text", serif;
+}
+
+.layout-home > h1 {
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  font-size: 4em;
+  font-weight: 400;
+  padding: 0.4rem 1rem;
+  margin: 0;
+}
+
+.layout-home > h2 {
+  font-size: 1.7em;
+  margin: 0;
+  font-weight: 900;
+  padding: 0 0.5rem;
+}
+
+.layout-home > p {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0.5rem;
 }
