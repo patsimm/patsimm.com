@@ -228,15 +228,17 @@ a.page-link {
 /* FOOTER */
 
 footer {
-  margin: 0;
+  margin: 0 auto;
   width: 90%;
-  max_width: 50rem;
+  max-width: 50rem;
 }
 
 .copyright {
   margin-top: 0;
   font-size: 0.7em;
+  display: block;
   float: right;
+  text-align: right;
   color: $grey;
 }
 
@@ -254,4 +256,22 @@ footer {
 
 .post-list {
   width: 100%;
+}
+
+/* 404 */
+
+.layout-404 {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.layout-404 .container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.layout-404 h1 {
+  margin-left: auto;
+  margin-right: auto;
 }

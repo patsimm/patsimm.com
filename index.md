@@ -2,7 +2,7 @@
 layout: home
 title: index.html
 greeting: Hello.
-subtitle: This is <i>patsimm</i>.
+subtitle: I am <i>patsimm</i>.
 description: Human. Explorer. Developer.
 ---
 ## I am
