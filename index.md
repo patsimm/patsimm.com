@@ -1,11 +1,11 @@
 ---
 layout: home
+title: index.html
 greeting: Hello.
 subtitle: This is <i>patsimm</i>.
 description: Human. Explorer. Developer.
 ---
-
-# I am
+## I am
  - called **Patrick Simmelbauer**.  
  - born in **Germany**.
  - living on the **earth**.
@@ -14,7 +14,7 @@ description: Human. Explorer. Developer.
  - learning new things every day.
  - **open minded**.
 
-# I like
+## I like
  - **challenges**.
  - being at places I do not know yet.
  - being around people I do not know yet.

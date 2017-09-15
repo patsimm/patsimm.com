@@ -5,6 +5,7 @@ $font_special:   "Crimson Text", serif;
 $white:           #fff;
 $black:           #343838;
 $lightgrey:       #efefef;
+$grey:            #898989;
 $accent-dark:     #005F6B;
 $accent:          #00B4CC;
 
@@ -13,6 +14,7 @@ $accent:          #00B4CC;
 }
 
 html {
+  font-family: $font;
   font-size: 16px;
 }
 
@@ -27,8 +29,10 @@ body {
   max-width: 50rem;
   width: 90%;
   padding: 1em;
-  border-top: 1em solid $black;
+  border-top: 0.15em solid $black;
+  border-bottom: 0.15em solid $black;
   margin: 0 auto;
+  margin-top: 1rem;
   flex-wrap: wrap;
   align-content: stretch;
 }
@@ -44,8 +48,15 @@ h1 {
   font-weight: 400;
   color: $white;
   background-color: $black;
-  display: inline-block;
+  display: table;
+  margin-right: auto;
+  margin-left: 0;
   padding: 0.05em 0.3em;
+}
+
+h2 {
+  font-family: $font_special;
+  font-weight: 900;
 }
 
 a {
@@ -139,11 +150,10 @@ a.page-link {
   text-transform: lowercase;
 }
 
-/*
-  HERO
- */
+/* HERO */
 
 .hero {
+  font-family: $font_special;
   background-image: url("/assets/bg.jpg");
   background-position: center;
   background-size: cover;
@@ -215,10 +225,33 @@ a.page-link {
   }
 }
 
-/* HOME */
+/* FOOTER */
 
-.layout-home {
-  font-family: $font_special;
+footer {
+  margin: 0;
+  width: 90%;
+  max_width: 50rem;
 }
 
-/* FOOTER */
+.copyright {
+  margin-top: 0;
+  font-size: 0.7em;
+  float: right;
+  color: $grey;
+}
+
+/* SUBSITE */
+
+.layout-subsite h1 {
+  text-transform: lowercase;
+}
+
+.layout-subsite h1::after {
+  content: '.html';
+}
+
+/* POST LIST */
+
+.post-list {
+  width: 100%;
+}
