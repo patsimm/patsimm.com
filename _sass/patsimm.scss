@@ -7,21 +7,26 @@ $black:           #343838;
 $accent-light:    #005F6B;
 $accent:          #00B4CC;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: $font;
   background-color: $white;
   color: $black;
   margin: 0;
 }
 
 .page-content {
+  font-family: $font;
   max-width: 50rem;
   width: 90%;
-  padding-top: 3em;
+  padding: 1em;
+  border-top: 1em solid $accent-light;
   margin: 0 auto;
 }
 
@@ -94,32 +99,59 @@ a.page-link {
   text-transform: lowercase;
 }
 
-/* HOME */
+/*
+  HERO
+ */
 
-.layout-home {
-  font-family: $font_special;
+.hero {
+  background-image: url("/assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 20rem;
+  padding: 2em 1em;
+  position: relative;
 }
 
-.layout-home > h1 {
+.hero-greeting > h1 {
   color: $white;
   background-color: $black;
   display: inline-block;
   font-size: 4em;
   font-weight: 400;
-  padding: 0.4rem 1rem;
+  line-height: 100%;
+  padding: 0.1em 0.3em;
   margin: 0;
 }
 
-.layout-home > h2 {
+.hero-text {
+  float: right;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.hero-text > h2 {
   font-size: 1.7em;
+  background-color: $white;
   margin: 0;
+  display: inline-block;
+  float: right;
   font-weight: 900;
   padding: 0 0.5rem;
 }
 
-.layout-home > p {
+.hero-text > p {
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 900;
+  color: $white;
   margin: 0;
   padding: 0 0.5rem;
+  float: right;
+}
+
+/* HOME */
+
+.layout-home {
+  font-family: $font_special;
+
 }
