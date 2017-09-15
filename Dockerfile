@@ -3,7 +3,7 @@ FROM alpine:3.6
 RUN mkdir -p /var/www
 WORKDIR /var/www
 
-RUN apk add --no-cache build-base libffi-dev ruby-dev ruby-rdoc ruby-irb ruby \
+RUN apk add --no-cache build-base libffi-dev ruby-dev ruby-rdoc ruby-irb ruby nodejs \
   nginx && gem install jekyll bundler
 
 ADD . /var/www
