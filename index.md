@@ -1,10 +1,11 @@
 ---
-layout: home
 title: index.html
+layout: home
 greeting: Hello.
 subtitle: I am <i>patsimm</i>.
 description: Human. Explorer. Developer.
 ---
+
 ## I am
  - called **Patrick Simmelbauer**.  
  - born in **Germany**.

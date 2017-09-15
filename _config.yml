@@ -1,34 +1,37 @@
+---
 title: Hello. This is patsimm.
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  subsites:
+    title: Subsites
+    output: true
+    permalink: "/:collection/:name:output_ext"
+  uploads:
+    title: Uploads
+    output: true
 email: patrick.simmelbauer@gmail.com
-description: >-
-  patsimm - Human. Explorer. Developer.
-baseurl: ""
-url: "http://patsimm.com"
-github_username:  patsimm
-
-# Build settings
+description: patsimm - Human. Explorer. Developer.
+baseurl: 
+url: http://patsimm.com
+github_username: patsimm
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - octopress-autoprefixer
-
-
-collections:
-  subsites:
-    output: true
-    permalink: /:collection/:name:output_ext
-
+- jekyll-feed
+- jekyll-seo-tag
+- octopress-autoprefixer
 exclude:
-  - Dockerfile
-  - nginx.conf
-  - README.md
-  - deploy_key.enc
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+- Dockerfile
+- nginx.conf
+- README.md
+- deploy_key.enc
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
