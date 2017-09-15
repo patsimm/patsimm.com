@@ -12,6 +12,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - octopress-autoprefixer
+
 
 collections:
   subsites:

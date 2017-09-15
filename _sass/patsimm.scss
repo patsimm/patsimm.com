@@ -4,25 +4,43 @@ $font:           "Open Sans", sans-serif;
 $font_special:   "Crimson Text", serif;
 $white:           #fff;
 $black:           #343838;
-$accent-light:    #005F6B;
+$lightgrey:       #efefef;
+$grey:            #898989;
+$accent-dark:     #005F6B;
 $accent:          #00B4CC;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
+  font-family: $font;
   font-size: 16px;
 }
 
 body {
-  font-family: $font;
   background-color: $white;
   color: $black;
   margin: 0;
 }
 
 .page-content {
+  font-family: $font;
   max-width: 50rem;
   width: 90%;
-  padding-top: 3em;
+  padding: 1em;
+  border-top: 0.15em solid $black;
+  border-bottom: 0.15em solid $black;
   margin: 0 auto;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+@media only screen and (min-width: 640px) {
+  .page-content {
+    display: flex;
+  }
 }
 
 h1 {
@@ -30,8 +48,15 @@ h1 {
   font-weight: 400;
   color: $white;
   background-color: $black;
-  display: inline-block;
+  display: table;
+  margin-right: auto;
+  margin-left: 0;
   padding: 0.05em 0.3em;
+}
+
+h2 {
+  font-family: $font_special;
+  font-weight: 900;
 }
 
 a {
@@ -40,7 +65,23 @@ a {
 }
 
 a:hover {
-  color: $accent-light;
+  color: $accent-dark;
+}
+
+.main-content {
+  width: 65%;
+  min-width: 15rem;
+  flex: 2;
+}
+
+.container {
+  background-color: $lightgrey;
+  color: $black;
+  //border: 1px solid $black;
+  padding: 1em 1.2em;
+  box-shadow: 0em 0em 1.6em -1em
+  $black;
+  flex: 1;
 }
 
 /* HEADER */
@@ -52,6 +93,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 0.5em 0;
   margin: 0 auto;
+  box-shadow: 2px 0px 10px 3px black;
 }
 
 .site-nav {
@@ -61,16 +103,25 @@ a:hover {
 }
 
 .site-title {
+  font-family: $font_special;
   font-size: 1.3em;
   font-weight: 900;
   letter-spacing: 0.2em;
   text-decoration: none;
   color: $black;
   background: $white;
-  padding: 0 0.2em;
-  padding-left: 0.3em;
-  padding-bottom: 0.2em;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  line-height: 1.8em;
+  text-align: center;
   margin: 0 0.3em;
+  box-shadow: 0em 0em 1em -0.1em black;
+}
+
+.site-title:hover {
+  color: $black;
+  box-shadow: 0em 0em 0.3em 0.2em black;
 }
 
 .site-nav ul {
@@ -82,6 +133,11 @@ a:hover {
 .site-nav li {
   float: right;
   margin: 0 0.3em;
+  box-shadow: 0em 0em 0.5em -0.2em black;
+}
+
+.site-nav li:hover {
+  box-shadow: 0em 0em 0.3em 0.1em black;
 }
 
 a.page-link {
@@ -94,32 +150,128 @@ a.page-link {
   text-transform: lowercase;
 }
 
-/* HOME */
+/* HERO */
 
-.layout-home {
+.hero {
   font-family: $font_special;
+  background-image: url("/assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 20rem;
+  position: relative;
 }
 
-.layout-home > h1 {
+.hero > .wrapper {
+  width: 90%;
+  max-width: 50rem;
+  height: inherit;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-greeting > h1 {
   color: $white;
   background-color: $black;
   display: inline-block;
   font-size: 4em;
   font-weight: 400;
-  padding: 0.4rem 1rem;
-  margin: 0;
+  line-height: 100%;
+  padding: 0.1rem 0.3rem;
+  top: 1rem;
 }
 
-.layout-home > h2 {
+.hero-text {
+  float: right;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+}
+
+.hero-text > h2 {
   font-size: 1.7em;
+  background-color: $white;
   margin: 0;
+  display: inline-block;
+  float: right;
   font-weight: 900;
   padding: 0 0.5rem;
 }
 
-.layout-home > p {
+.hero-text > h3 {
   font-size: 1.5em;
-  font-weight: 400;
-  margin: 0;
+  font-weight: 900;
+  color: $white;
   padding: 0 0.5rem;
+  text-shadow: 0px 0px 7px $black;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin: 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .hero-text {
+    right: auto;
+    bottom: 4rem;
+    left: 0;
+  }
+
+  .hero-text > h2 {
+    float: left;
+  }
+
+  .hero-text > h3 {
+    text-align: left;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 50rem;
+}
+
+.copyright {
+  margin-top: 0;
+  font-size: 0.7em;
+  display: block;
+  float: right;
+  text-align: right;
+  color: $grey;
+}
+
+/* SUBSITE */
+
+.layout-subsite h1 {
+  text-transform: lowercase;
+}
+
+.layout-subsite h1::after {
+  content: '.html';
+}
+
+/* POST LIST */
+
+.post-list {
+  width: 100%;
+}
+
+/* 404 */
+
+.layout-404 {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.layout-404 .container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.layout-404 h1 {
+  margin-left: auto;
+  margin-right: auto;
 }
