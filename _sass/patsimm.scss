@@ -1,34 +1,108 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,900|Open+Sans:400,700');
 
+$font:           "Open Sans", sans-serif;
+$font_special:   "Crimson Text", serif;
+$white:           #fff;
+$black:           #343838;
+$accent-light:    #005F6B;
+$accent:          #00B4CC;
+
+html {
+  font-size: 16px;
+}
+
 body {
-  margin: 1em;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
+  font-family: $font;
+  background-color: $white;
+  color: $black;
+  margin: 0;
 }
 
 .page-content {
+  max-width: 50rem;
+  width: 90%;
+  padding-top: 3em;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: $font_special;
+  font-weight: 400;
+  color: $white;
+  background-color: $black;
   display: inline-block;
-  max-width: 1024px;
-  width: 100%;
-  text-align: left;
-  font-size: 14px;
+  padding: 0.05em 0.3em;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $accent-light;
 }
 
 /* HEADER */
 
 .site-header {
-  font-family: "Crimson Text", serif;
+  background: $black;
+  font-weight: 900;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em 0;
+  margin: 0 auto;
+}
+
+.site-nav {
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+}
+
+.site-title {
+  font-size: 1.3em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: $black;
+  background: $white;
+  padding: 0 0.2em;
+  padding-left: 0.3em;
+  padding-bottom: 0.2em;
+  margin: 0 0.3em;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: auto;
+  padding: 0.3em;
+}
+
+.site-nav li {
+  float: right;
+  margin: 0 0.3em;
+}
+
+a.page-link {
+  font-family: $font_special;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: $black;
+  background-color: $white;
+  padding: 0.2em 0.6em;
+  text-transform: lowercase;
 }
 
 /* HOME */
 
 .layout-home {
-  font-family: "Crimson Text", serif;
+  font-family: $font_special;
 }
 
 .layout-home > h1 {
-  color: #fff;
-  background-color: #000;
+  color: $white;
+  background-color: $black;
   display: inline-block;
   font-size: 4em;
   font-weight: 400;
