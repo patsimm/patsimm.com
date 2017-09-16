@@ -15,9 +15,3 @@ fields:
   config:
     required: true
   default: default
-- type: textarea
-  name: body
-  label: Body
-  description: The text to display in the subsite
-  config:
-    wysiwyg: true
