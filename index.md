@@ -1,6 +1,6 @@
 ---
 description: Human. Explorer. Developer.
-greeting: Hello World.
+greeting: Hello.
 layout: home
 subtitle: I am <i>patsimm</i>.
 title: index.html
