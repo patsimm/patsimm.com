@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/2017-09-11-welcome-to-jekyll.md
 hide_body: false
 fields:
 - name: title
