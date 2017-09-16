@@ -22,6 +22,6 @@ fields:
   label: Layout
   type: text
   hidden: true
-  default: page
+  default: post
   config:
     required: true
