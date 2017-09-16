@@ -1,9 +1,9 @@
 ---
-title: index.html
-layout: home
-greeting: Hello.
-subtitle: I am <i>patsimm</i>.
 description: Human. Explorer. Developer.
+greeting: Hello World.
+layout: home
+subtitle: I am <i>patsimm</i>.
+title: index.html
 ---
 
 ## I am
