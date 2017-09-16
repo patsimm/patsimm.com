@@ -4,5 +4,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: default
+  config:
+    required: true
