@@ -1,5 +1,6 @@
 ---
 pages:
+- _subsites/about.md
 - _subsites/blog.md
 hide_body: false
 fields:
