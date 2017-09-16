@@ -12,7 +12,7 @@ fields:
   label: Date
   type: datetime
   hidden: false
-  default: ''
+  default: 2017-09-11 06:23:00 +0200
 - name: categories
   label: Categories
   type: tag_list
