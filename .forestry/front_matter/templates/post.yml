@@ -21,7 +21,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: true
+  hidden: ''
   default: post
   config:
     required: true
