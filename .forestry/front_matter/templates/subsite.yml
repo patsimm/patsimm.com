@@ -11,7 +11,7 @@ fields:
   name: layout
   label: Layout
   description: The layout this subsite should use
-  hidden: true
+  hidden: ''
   config:
     required: true
   default: default
