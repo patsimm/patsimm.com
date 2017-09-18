@@ -14,7 +14,7 @@ collections:
     output: true
 email: patrick.simmelbauer@gmail.com
 description: patsimm - Human. Explorer. Developer.
-baseurl: 
+baseurl:
 url: http://patsimm.com
 github_username: patsimm
 markdown: kramdown
@@ -22,6 +22,7 @@ theme: minima
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
+- jekyll-menus
 - octopress-autoprefixer
 exclude:
 - Dockerfile

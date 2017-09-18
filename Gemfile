@@ -7,6 +7,7 @@ gem 'octopress-autoprefixer'
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-seo-tag'
+  gem 'jekyll-menus'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

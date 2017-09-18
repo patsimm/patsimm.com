@@ -3,13 +3,8 @@
     <a class="site-title" href="{{ "/" | relative_url }}">:)</a>
 
     <nav class="site-nav">
-      <ul>
-        {% for subsite in site.subsites %}
-          {% if subsite.title %}
-          <li><a class="page-link" href="{{ subsite.url | relative_url }}">{{ subsite.title | escape }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      {% assign menu = site.menus.header %}
+      {% include menu.html %}
     </nav>
   </div>
 </header>
