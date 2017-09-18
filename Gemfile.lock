@@ -65,6 +65,7 @@ DEPENDENCIES
   jekyll-seo-tag
   minima (~> 2.0)
   octopress-autoprefixer
+  rouge
   tzinfo-data
 
 BUNDLED WITH

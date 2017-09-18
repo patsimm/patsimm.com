@@ -18,6 +18,7 @@ baseurl:
 url: http://patsimm.com
 github_username: patsimm
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
 - jekyll-feed
