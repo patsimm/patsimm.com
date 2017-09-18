@@ -1,0 +1,12 @@
+---
+pages:
+- 404.html
+hide_body: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: default
+  config:
+    required: true

@@ -1,0 +1,29 @@
+---
+pages:
+- _posts/2017-09-11-welcome-to-jekyll.md
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: 2017-09-11 06:23:00 +0200
+- name: categories
+  label: Categories
+  type: tag_list
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: ''
+  default: post
+  config:
+    required: true
