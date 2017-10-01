@@ -14,7 +14,7 @@ fields:
   label: Date
   type: datetime
   hidden: false
-  default: 2017-09-11 06:23:00 +0200
+  default: 2017-09-11 04:23:00 +0000
 - name: categories
   label: Categories
   type: tag_list
@@ -27,3 +27,8 @@ fields:
   default: post
   config:
     required: true
+- type: file
+  name: image
+  label: Image
+  config:
+    maxSize: '10'
