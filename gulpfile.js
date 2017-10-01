@@ -31,6 +31,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         browser: 'firefox',
+        notify: false,
         server: {
             baseDir: '_site'
         }
@@ -60,7 +61,7 @@ gulp.task('watch', function () {
     gulp.watch(['_sass/*.scss', '_sass/*.sass'], ['sass']);
     gulp.watch([
       '*.html', '_layouts/*.html', '_posts/*', '_includes/*.html',
-      '_subsites/*.html', 'assets/images/*'], 
+      '_subsites/*', 'assets/images/*'],
       ['jekyll-rebuild']);
 });
 
