@@ -1,0 +1,27 @@
+{
+  "name": "patsimm.com",
+  "version": "1.0.0",
+  "description": "patsimms website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patsimm/patsimm.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patsimm/patsimm.com/issues"
+  },
+  "homepage": "https://github.com/patsimm/patsimm.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.3",
+    "lodash": "^4.17.4"
+  }
+}

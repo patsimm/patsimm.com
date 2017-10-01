@@ -24,7 +24,6 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-menus
-- octopress-autoprefixer
 exclude:
 - Dockerfile
 - nginx.conf
@@ -37,3 +36,6 @@ exclude:
 - vendor/cache/
 - vendor/gems/
 - vendor/ruby/
+- gulpfile.js
+- package.json
+- package-lock.json
