@@ -8,6 +8,6 @@ RUN apk add --no-cache build-base libffi-dev ruby-dev ruby-rdoc ruby-irb ruby no
 
 ADD . /var/www
 
-RUN mv nginx.conf /etc/nginx/nginx.conf && bundle install && jekyll build
+RUN mv nginx.conf /etc/nginx/nginx.conf && bundle install && bundle exec jekyll build
 
 CMD ["nginx", "-g", "pid /tmp/nginx.pid; daemon off;"]
