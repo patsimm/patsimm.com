@@ -95,7 +95,8 @@ img
   padding: 0.5em 0
   margin: 0 auto
   box-shadow: 2px 0px 10px 3px black
-  z-index: 200
+  position: relative
+  z-index: 1
 
 .site-title
   font-family: $font_special
@@ -149,13 +150,34 @@ img
   background-size: cover
   height: 20rem
   position: relative
-  z-index: -100
   & > .wrapper
     width: 90%
     max-width: 50rem
     height: inherit
     margin: 0 auto
     position: relative
+    & > h1
+      color: $black
+      background-color: $white
+      display: block
+      font-size: 2.5em
+      font-weight: 600
+      padding: 0.1rem 0.3rem
+      position: absolute
+      bottom: 1rem
+    .categories
+      position: absolute
+      right: 0
+      bottom: -1rem
+      .category
+        position: relative
+        display: inline-block
+        color: $white
+        background-color: $black
+        padding: 0.1rem 0.3rem
+        &:hover
+          color: $black
+          background-color: $white
 
 .hero-greeting > h1
   color: $white

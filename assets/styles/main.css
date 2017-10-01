@@ -110,7 +110,8 @@ img {
   margin: 0 auto;
   -webkit-box-shadow: 2px 0px 10px 3px black;
           box-shadow: 2px 0px 10px 3px black;
-  z-index: 200; }
+  position: relative;
+  z-index: 1; }
 
 .site-title {
   font-family: "Crimson Text", serif;
@@ -170,14 +171,35 @@ img {
   -webkit-background-size: cover;
           background-size: cover;
   height: 20rem;
-  position: relative;
-  z-index: -100; }
+  position: relative; }
   .hero > .wrapper {
     width: 90%;
     max-width: 50rem;
     height: inherit;
     margin: 0 auto;
     position: relative; }
+    .hero > .wrapper > h1 {
+      color: #343838;
+      background-color: #fff;
+      display: block;
+      font-size: 2.5em;
+      font-weight: 600;
+      padding: 0.1rem 0.3rem;
+      position: absolute;
+      bottom: 1rem; }
+    .hero > .wrapper .categories {
+      position: absolute;
+      right: 0;
+      bottom: -1rem; }
+      .hero > .wrapper .categories .category {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        background-color: #343838;
+        padding: 0.1rem 0.3rem; }
+        .hero > .wrapper .categories .category:hover {
+          color: #343838;
+          background-color: #fff; }
 
 .hero-greeting > h1 {
   color: #fff;
