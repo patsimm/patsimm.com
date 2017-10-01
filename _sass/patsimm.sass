@@ -85,6 +85,16 @@ img
   background-color: $black
   margin: 0
 
+.category
+  position: relative
+  display: inline-block
+  color: $white
+  background-color: $black
+  padding: 0.1rem 0.3rem
+  &:hover
+    color: $black
+    background-color: $white
+
 /* HEADER */
 
 .site-header
@@ -169,15 +179,7 @@ img
       position: absolute
       right: 0
       bottom: -1rem
-      .category
-        position: relative
-        display: inline-block
-        color: $white
-        background-color: $black
-        padding: 0.1rem 0.3rem
-        &:hover
-          color: $black
-          background-color: $white
+
 
 .hero-greeting > h1
   color: $white
@@ -257,6 +259,8 @@ footer
     height: 8rem
     background-position: center
     background-size: cover
+    position: relative
+    margin-bottom: 0.2em
     h2
       background-color: $white
       color: $black
@@ -273,6 +277,15 @@ footer
       padding: 0 0.5rem
       display: inline-block
       float: right
+    .categories
+      font-size: 0.8rem
+      position: absolute
+      right: 0.5rem
+      bottom: 0.5rem
+
+.container
+  .categories
+    display: none
 
 /* 404 */
 

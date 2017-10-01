@@ -8,11 +8,8 @@ layout: default
       <h1>
         {{ page.title }}
       </h1>
-      <div class="categories">
-        {% for category in page.categories %}
-          <a href="#" class="category">{{ category }}</a>
-        {% endfor %}
-      </div>
+      {% assign categories = page.categories %}
+      {% include categories.html %}
     </div>
   </div>
   <div class="page-content">

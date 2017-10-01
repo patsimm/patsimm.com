@@ -95,6 +95,16 @@ img {
   background-color: #343838;
   margin: 0; }
 
+.category {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  background-color: #343838;
+  padding: 0.1rem 0.3rem; }
+  .category:hover {
+    color: #343838;
+    background-color: #fff; }
+
 /* HEADER */
 .site-header {
   background: #343838;
@@ -191,15 +201,6 @@ img {
       position: absolute;
       right: 0;
       bottom: -1rem; }
-      .hero > .wrapper .categories .category {
-        position: relative;
-        display: inline-block;
-        color: #fff;
-        background-color: #343838;
-        padding: 0.1rem 0.3rem; }
-        .hero > .wrapper .categories .category:hover {
-          color: #343838;
-          background-color: #fff; }
 
 .hero-greeting > h1 {
   color: #fff;
@@ -276,7 +277,9 @@ footer {
     height: 8rem;
     background-position: center;
     -webkit-background-size: cover;
-            background-size: cover; }
+            background-size: cover;
+    position: relative;
+    margin-bottom: 0.2em; }
     .post-list .post-item h2 {
       background-color: #fff;
       color: #343838;
@@ -293,6 +296,14 @@ footer {
       padding: 0 0.5rem;
       display: inline-block;
       float: right; }
+    .post-list .post-item .categories {
+      font-size: 0.8rem;
+      position: absolute;
+      right: 0.5rem;
+      bottom: 0.5rem; }
+
+.container .categories {
+  display: none; }
 
 /* 404 */
 .layout-404 {
