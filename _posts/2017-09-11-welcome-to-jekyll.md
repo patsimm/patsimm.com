@@ -9,19 +9,24 @@ layout: post
 title: This is me
 image: "/assets/images/bg.jpg"
 ---
+
+
 Hello. Welcome to my blog. For sure you are interested in what you can find on this website. In the future you can find stories about
-- my __travels__
-- my __work__
-- and __stuff__ that I find __interesting__ and for sure you will too.
+
+* my **travels**
+
+* my **work**
+
+* and **stuff** that I find **interesting** and for sure you will too.
 
 To start off with this blog I will give you guys a short overview about those 3 topics. That way you will know what
 you can expect from my little website.
 
 ## my travels
 
-So... I like travelling. I mean who doesn't, right? I went travelling for about a year just after I got my bachelor's degree. The picture on the top of this post shows me on Tasmania's beautiful Cradle mountain. In Tasmania I've been living for three months working on a farm. Tasmania is beautiful. But I don't want to tell too many details right now, since I don't want to know everything already. I want you to come back. There's a lot of pictures to show and a lot of stories to tell. And the thing is, life is still going on and there's a lot of stories not even lived yet.
+Soooo. I like travelling. I mean who doesn't, right? I went travelling for about a year just after I got my bachelor's degree. The picture on the top of this post shows me on Tasmania's beautiful Cradle mountain. In Tasmania I've been living for three months working on a farm. Tasmania is beautiful. But I don't want to tell too many details right now, since I don't want to know everything already. I want you to come back. There's a lot of pictures to show and a lot of stories to tell. And the thing is, life is still going on and there's a lot of stories not even lived yet.
 
-In Tasmania I've been during my Working Holiday in Australia. I stayed in Australia for about 11 months, and went to Thailand for another month just after. Now I am at home again. If you're somewhat familiar with mathematics you would know by now that I was away from home for about a year. Living out of my backpack for a year was an awesome experience and it taught me a lot. 
+In Tasmania I've been during my Working Holiday in Australia. I stayed in Australia for about 11 months, and went to Thailand for another month just after. Now I am at home again. If you're somewhat familiar with mathematics you would know by now that I was away from home for about a year. Living out of my backpack for a year was an awesome experience and it taught me a lot.
 
 ## my work
 
@@ -29,6 +34,6 @@ Just before I went travelling I finished my studies of computer science. I have 
 
 ## interesting stuff
 
-The world is still turning. This will probably not stop too soon. As long as the world is turning and probably even longter stuff will happen. Some things that happen are less interesting to some people than others. I will tell you about stuff that I find interesting. There's now specific topics that you could expect since there's a lot of interesting things going on everywhere. 
+The world is still turning. This will probably not stop too soon. As long as the world is turning and probably even longter stuff will happen. Some things that happen are less interesting to some people than others. I will tell you about stuff that I find interesting. There's now specific topics that you could expect since there's a lot of interesting things going on everywhere.
 
-I hope I have your attention now. And I hope you will come back. See you! 
+I hope I have your attention now. And I hope you will come back. See you!
