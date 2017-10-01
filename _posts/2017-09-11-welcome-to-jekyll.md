@@ -1,29 +1,34 @@
 ---
 categories:
-- jekyll
-- update
+- welcome
+- travel
+- work
+- stuff
 date: 2017-09-11 06:23:27 +0200
 layout: post
-title: Welcome to Jekyll!
-image: "/uploads/2017/10/01/10A.jpg"
+title: This is me
+image: "/assets/images/bg.jpg"
 ---
+Hello. Welcome to my blog. For sure you are interested in what you can find on this website. In the future you can find stories about
+- my __travels__
+- my __work__
+- and __stuff__ that I find __interesting__ and for sure you will too.
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+To start off with this blog I will give you guys a short overview about those 3 topics. That way you will know what
+you can expect from my little website.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## my travels
 
-Jekyll also offers powerful support for code snippets:
+So... I like travelling. I mean who doesn't, right? I went travelling for about a year just after I got my bachelor's degree. The picture on the top of this post shows me on Tasmania's beautiful Cradle mountain. In Tasmania I've been living for three months working on a farm. Tasmania is beautiful. But I don't want to tell too many details right now, since I don't want to know everything already. I want you to come back. There's a lot of pictures to show and a lot of stories to tell. And the thing is, life is still going on and there's a lot of stories not even lived yet.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+In Tasmania I've been during my Working Holiday in Australia. I stayed in Australia for about 11 months, and went to Thailand for another month just after. Now I am at home again. If you're somewhat familiar with mathematics you would know by now that I was away from home for about a year. Living out of my backpack for a year was an awesome experience and it taught me a lot. 
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## my work
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Just before I went travelling I finished my studies of computer science. I have a big passion for technology and nerdy stuff. I have a small workshop at my dad's place where I'm able to build cool and weird stuff or just sit there and learn something new. Since I am back from travelling now I am searching for a job which lets me live this passion to the fullest. (Shoutout to all you employers out there!) Maybe you will also read about my path of finding a job here, who knows. I will definitely showcase some of my awesome little hobby projects and explain you how to do it yourself.
+
+## interesting stuff
+
+The world is still turning. This will probably not stop too soon. As long as the world is turning and probably even longter stuff will happen. Some things that happen are less interesting to some people than others. I will tell you about stuff that I find interesting. There's now specific topics that you could expect since there's a lot of interesting things going on everywhere. 
+
+I hope I have your attention now. And I hope you will come back. See you! 
