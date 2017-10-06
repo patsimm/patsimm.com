@@ -102,7 +102,7 @@ img
   font-weight: 900
   display: flex
   flex-wrap: wrap
-  padding: 0.5em 0
+  padding: 0.1em 0
   margin: 0 auto
   box-shadow: 2px 0px 10px 3px black
   position: relative
@@ -112,20 +112,14 @@ img
   font-family: $font_special
   font-size: 1.3em
   font-weight: 900
-  letter-spacing: 0.2em
   text-decoration: none
-  color: $black
-  background: $white
-  border-radius: 50%
-  width: 2em
+  color: $white
   height: 2em
   line-height: 1.8em
   text-align: center
   margin: 0 0.3em
-  box-shadow: 0em 0em 1em -0.1em black
   &:hover
-    color: $black
-    box-shadow: 0em 0em 0.3em 0.2em black
+    color: $grey
 
 .site-nav
   margin: 0
@@ -139,14 +133,17 @@ img
     float: right
     margin: 0 0.3em
     box-shadow: 0em 0em 0.5em -0.2em black
+    color: $black
+    background-color: $white
     &:hover
-      box-shadow: 0em 0em 0.3em 0.1em black
+      box-shadow: none
+      color: $white
+      background-color: $grey
   a
+    color: inherit
     font-family: $font_special
     font-size: 1.1em
     text-decoration: none
-    color: $black
-    background-color: $white
     padding: 0.2em 0.6em
     text-transform: lowercase
 
@@ -246,6 +243,17 @@ footer
     &:after
       content: '.html'
 
+/* CATEGORY LIST */
+
+.layout-category
+  h1
+    text-transform: lowercase
+    &::before
+      content: '/category/'
+      color: $grey
+    &::after
+      content: '.html'
+
 /* POST LIST */
 
 .post-list
@@ -261,9 +269,12 @@ footer
     background-size: cover
     position: relative
     margin-bottom: 0.2em
+    color: $black
+    &:hover
+      color: $accent
     h2
       background-color: $white
-      color: $black
+      color: inherit
       display: inline-block
       padding: 0 0.5rem
       margin: 0.5rem

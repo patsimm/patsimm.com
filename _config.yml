@@ -13,6 +13,11 @@ collections:
   uploads:
     title: Uploads
     output: true
+  category:
+    title: Categories
+    output: true
+    permalink: "/category/:name.html"
+
 email: patrick.simmelbauer@gmail.com
 description: patsimm - Human. Explorer. Developer.
 baseurl:
