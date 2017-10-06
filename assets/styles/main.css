@@ -120,7 +120,8 @@ img {
   margin: 0 auto;
   -webkit-box-shadow: 2px 0px 10px 3px black;
           box-shadow: 2px 0px 10px 3px black;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 1; }
 
 .site-title {
@@ -166,6 +167,9 @@ img {
     text-decoration: none;
     padding: 0.2em 0.6em;
     text-transform: lowercase; }
+
+.layout {
+  padding-top: 2em; }
 
 /* HERO */
 .hero {
@@ -254,18 +258,18 @@ footer {
   color: #898989; }
 
 /* SUBSITE */
-.layout-subsite h1 {
+.layout .subsite h1 {
   text-transform: lowercase; }
-  .layout-subsite h1:after {
+  .layout .subsite h1:after {
     content: '.html'; }
 
 /* CATEGORY LIST */
-.layout-category h1 {
+.layout .category h1 {
   text-transform: lowercase; }
-  .layout-category h1::before {
+  .layout .category h1::before {
     content: '/category/';
     color: #898989; }
-  .layout-category h1::after {
+  .layout .category h1::after {
     content: '.html'; }
 
 /* POST LIST */
@@ -312,13 +316,13 @@ footer {
   display: none; }
 
 /* 404 */
-.layout-404 {
+.layout .404 {
   width: 90%;
   max-width: 50rem;
   margin: 0 auto; }
-  .layout-404 .container {
+  .layout .404 .container {
     margin-top: 2rem;
     text-align: center; }
-  .layout-404 h1 {
+  .layout .404 h1 {
     margin-left: auto;
     margin-right: auto; }
