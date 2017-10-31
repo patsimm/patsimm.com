@@ -45,3 +45,6 @@ exclude:
 - gulpfile.js
 - package.json
 - package-lock.json
+- Rakefile
+- Procfile
+- config.ru
