@@ -1,8 +1,6 @@
 services:
 - docker
 before_install:
-- openssl aes-256-cbc -K $encrypted_0b242e099523_key -iv $encrypted_0b242e099523_iv
-  -in deploy_key.enc -out deploy_key -d
 - docker build -t website-patsimm .
 - docker run -d --name web website-patsimm
 - docker ps -a
@@ -10,10 +8,3 @@ script:
 - docker ps -a | grep web
 after_script:
 - docker rm -f web
-
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: chmod 600 deploy_key && ssh -o StrictHostKeyChecking=no -i deploy_key patrick@84.200.43.224 /opt/website/deploy.sh
-  on:
-    branch: master
